@@ -79,4 +79,49 @@ const getRand = () => {
 };
 
 // problem 4
-const fiveDaysAhead = () => {};
+const fiveDaysAhead = () => {
+  const week = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+
+  const currentDay = document.getElementById("dayInput").value;
+  let result4 = "";
+  let currentIndex = 0;
+
+  switch (currentDay) {
+    case "Monday":
+      currentIndex = 0;
+      break;
+    case "Tuesday":
+      currentIndex = 1;
+      break;
+    case "Wednesday":
+      currentIndex = 2;
+      break;
+    case "Thursday":
+      currentIndex = 3;
+      break;
+    case "Friday":
+      currentIndex = 4;
+      break;
+    case "Saturday":
+      currentIndex = 5;
+      break;
+    case "Sunday":
+      currentIndex = 6;
+      break;
+  }
+
+  let futureIndex = (currentIndex + 5) % week.length;
+  let futureDay = week[futureIndex];
+
+  document.getElementById(
+    "prob4Result"
+  ).textContent = `It will be ${futureDay} in 5 days.`;
+};
