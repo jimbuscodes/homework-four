@@ -77,3 +77,6 @@ const getRand = () => {
 
   document.getElementById("prob3Result").textContent = result3;
 };
+
+// problem 4
+const fiveDaysAhead = () => {};
