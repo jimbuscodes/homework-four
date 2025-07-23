@@ -116,12 +116,17 @@ const fiveDaysAhead = () => {
     case "Sunday":
       currentIndex = 6;
       break;
+    default:
+      document.getElementById("prob4Result").textContent = "error...";
+      break;
   }
 
   let futureIndex = (currentIndex + 5) % week.length;
-  let futureDay = week[futureIndex];
+  result4 = week[futureIndex];
 
   document.getElementById(
     "prob4Result"
-  ).textContent = `It will be ${futureDay} in 5 days.`;
+  ).textContent = `It will be ${result4} in 5 days.`;
 };
+
+// problem 5
