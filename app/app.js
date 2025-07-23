@@ -53,4 +53,27 @@ if (avg > 0.75) {
 document.getElementById("prob2Result").textContent = result2;
 
 // problem 3
-const getRand = () => {};
+const getRand = () => {
+  let rand = Math.floor(Math.random() * 5) + 1;
+  let result3 = "";
+
+  switch (rand) {
+    case 1:
+      result3 = "1: The lowest number you can get";
+      break;
+    case 2:
+      result3 = "2: This is the lowest even number you can get";
+      break;
+    case 3:
+      result3 = "3: Right smack in the middle";
+      break;
+    case 4:
+      result3 = "4: Good number!";
+      break;
+    case 5:
+      result3 = "5: Way to roll!";
+      break;
+  }
+
+  document.getElementById("prob3Result").textContent = result3;
+};
