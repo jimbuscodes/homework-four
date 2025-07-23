@@ -130,3 +130,10 @@ const fiveDaysAhead = () => {
 };
 
 // problem 5
+const colors = "Red Orange Blue Green Purple Yellow";
+const colorArr = colors.split(" ");
+const favIndex = 4;
+
+document.getElementById(
+  "prob5Result"
+).textContent = `My favorite color is ${colorArr[favIndex].toLowerCase()}.`;
