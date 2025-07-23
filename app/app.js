@@ -51,3 +51,6 @@ if (avg > 0.75) {
 }
 
 document.getElementById("prob2Result").textContent = result2;
+
+// problem 3
+const getRand = () => {};
