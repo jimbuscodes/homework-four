@@ -40,11 +40,11 @@ for (let i = 0; i < grades.length; i++) {
 
 avg = sum / grades.length;
 
-if (avg > 0.75) {
+if (avg > 75) {
   result2 = "You are in the top 25% of the class!";
-} else if (avg >= 0.6 && avg <= 0.75) {
+} else if (avg >= 60 && avg <= 75) {
   result2 = "You passed the class!";
-} else if (avg < 0.6) {
+} else if (avg < 60) {
   result2 = "Sorry - you did not pass the class. Better luck next time!";
 } else {
   result2 = "error...";
